@@ -24,3 +24,53 @@ body {
 .weather-card img {
     width: 100px;
 }
+
+.search-section {
+    margin-top: 20px;
+}
+
+#cityInput {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#cityInput:focus {
+    box-shadow: 0 0 5px white;
+}
+
+#searchBtn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#searchBtn:hover {
+    background-color: #ddd;
+}
+
+.error-message {
+    margin-top: 10px;
+    color: #ffdddd;
+}
+
+.loading {
+    margin-top: 15px;
+}
+
+.spinner {
+    border: 4px solid #fff;
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
